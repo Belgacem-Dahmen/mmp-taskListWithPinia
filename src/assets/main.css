@@ -5,6 +5,7 @@
 body * {
     font-family: 'Bricolage Grotesque';
 }
+
 body {
     background: #f2f2f2;
     color: #444;
@@ -24,6 +25,7 @@ header img {
     max-width: 260px;
     transform: rotate(-5deg);
 }
+
 header h1 {
     margin: 0;
     font-size: 2em;
@@ -35,21 +37,36 @@ header h1 {
 
 .task-list {
     max-width: 640px;
-    margin: auto;
-    
+    margin: 40px auto;
+
+
 }
+
 .task {
     padding: 6px 20px;
     background: #fff;
-    margin-top: 20px;border-radius: 4px;
+    margin-top: 20px;
+    border-radius: 4px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.task input {
+    margin: 10px 0;
+    flex: 1;
+    border: 1px solid ;
+    padding: 10px;
+    border-radius: 6px;
+    color: #555;
+    font-size: 1em;
+
+}
+
 .task h3 .task .icons {
     display: inline-block;
+
 }
 
 .task .icons {
@@ -62,15 +79,18 @@ header h1 {
     cursor: pointer;
     color: #bbb;
 }
-.task i:hover{
-    color:gray;
+
+.task i:hover {
+    color: gray;
     transform: scale(120%);
-    transition: all ease-in-out ;
+    transition: all ease-in-out;
 }
+
 .task i.active {
-    
+
     color: red;
 }
+
 /* Filter Nav  */
 .filter {
     width: 640px;
@@ -83,12 +103,12 @@ header h1 {
     display: inline-block;
     margin-left: 10px;
     background: #fff;
-    border:2px solid #555;
+    border: 2px solid #555;
     border-radius: 4px;
     padding: 4px 8px;
     cursor: pointer;
     font-size: 1em;
-    
+
 }
 
 .new-task-form {
@@ -100,13 +120,13 @@ form {
     max-width: 400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 3fr 1fr ;
+    grid-template-columns: 3fr 1fr;
     gap: 10px;
 }
 
 form button {
     background: #00378C;
-    color:white;
+    color: white;
     border: 0;
     padding: 10px;
     border-radius: 6px;
