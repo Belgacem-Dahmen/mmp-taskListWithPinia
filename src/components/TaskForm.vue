@@ -16,7 +16,7 @@ import { useTaskStore } from '../stores/TaskStore';
             const taskStore = useTaskStore();
             const taskText = ref('');
             const handleSubmit = () => {
-                if (taskText.value.length > 10 ) {
+                if (taskText.value.length > 5 ) {
                     taskStore.addTask( { 
                         id: Math.floor(Math.random() * 50000), 
                         title: taskText.value , 
